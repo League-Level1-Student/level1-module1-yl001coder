@@ -59,6 +59,15 @@ public class Rocket implements GameControlScene {
 		graphics2D.rotate(-Math.toRadians(angle), x, y);
 
 	}
+	
+	public Rocket(int x, int y) {
+		x = AsteroidsGame.WIDTH;
+		y = AsteroidsGame.HEIGHT;
+		size = 10;
+		collisionBox = new Rectangle(x - size / 2, y - size / 2, size, size);
+		this.x = x;
+		this.y = y;
+	}
 
 	void update() {
 		double newX = 0;

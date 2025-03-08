@@ -19,4 +19,5 @@ public class Vault {
 	public boolean tryCode(int guess) {
 		return guess == secret;
 	}
+	
 }
