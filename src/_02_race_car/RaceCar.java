@@ -19,7 +19,7 @@ public class RaceCar {
 	public RaceCar(String brand, int positionInRace) {
 		System.out.println("Your " +brand +" race car has been created.");
 		if (positionInRace <= 0)
-			throw new IllegalArgumentException("The car's position cannot be negative.");
+			throw new IllegalArgumentException("The car's position cannot be negative or zero.");
 		else if (positionInRace > 15) 
 			throw new IllegalArgumentException("There are only 15 cars in the race.");
 		

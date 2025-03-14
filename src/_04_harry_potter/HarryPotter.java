@@ -1,8 +1,4 @@
-package _04_harry_potter;
-/*
- *    Copyright (c) The League of Amazing Programmers 2013-2019
- *    Level 1
- */
+
 
 		/* Create a HarryRunner class in the harry_potter package with a main method.
 		 * The main method should:

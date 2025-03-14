@@ -20,5 +20,8 @@ public class RaceCarRunner {
 
 		// 5. Help the car move into first place.
 
+		new RaceCar("Ferarri", 5);
+		
+		
 	}
 }
