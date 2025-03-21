@@ -4,7 +4,11 @@ public class PopcornRunner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Microwave();
+		Microwave mw = new Microwave();
+		Popcorn popcorn = new Popcorn("unicorn");
+		mw.putInMicrowave(popcorn);
+		mw.setTime(5);
+		mw.startMicrowave();
 	}
 
 }

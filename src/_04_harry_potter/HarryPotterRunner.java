@@ -4,8 +4,11 @@ public class HarryPotterRunner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new HarryPotter();
-		new HarryPotter().castSpell("stupefy");
+		HarryPotter harry = new HarryPotter();
+		harry.makeInvisible(true);
+		harry.spyOnSnape();
+		harry.makeInvisible(false);
+		harry.castSpell("stupefy");
 	}
 
 }
