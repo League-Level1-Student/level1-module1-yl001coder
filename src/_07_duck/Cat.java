@@ -5,7 +5,7 @@ public class Cat {
 	String name;
 	Scanner scan = new Scanner(System.in);
 	Random rand = new Random();
-	boolean 
+	
 	Cat(String name){
 		this.name = name;
 		System.out.println("You have a cat named " + name + " now!");
