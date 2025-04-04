@@ -20,8 +20,22 @@ public class RaceCarRunner {
 
 		// 5. Help the car move into first place.
 
-		new RaceCar("Ferarri", 5).getPositionInRace();
+		RaceCar car = new RaceCar("Ferrari",5);
+		System.out.println(car.getPositionInRace());
+		car.crash();
+		boolean damaged = car.isDamaged();
+		if(damaged == true)
+		{
+			car.pit();
+		}
+		else {
+			int et = car.getPositionInRace();
+		while(et < 1)
+		{
+			car.overtake();
+		}
+		}
 		
 		
-	}
+}
 }

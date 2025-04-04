@@ -79,7 +79,7 @@ public class Planet {
         public Moon() {
             Random rand = new Random();
             this.moonColor = Color.WHITE;
-            this.moonDiameter = 10;
+            this.moonDiameter = 4;
             this.distPlanetToMoon = (diameter/2) + 10;
             this.moonDaysToOrbit = 50;                 // arbitrarily chosen
             this.daysOffset = rand.nextInt(365);

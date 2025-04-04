@@ -10,7 +10,7 @@ import game_tools.GameControlScene;
 /*
  * Background:
  * Our solar system has 8 planets that orbit around the sun:
- * Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune
+ * Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune (we don't care about Pluto)
  * While each planet is spherical, they are different sizes, colors,
  * and distances from the sun.
  * 
@@ -66,14 +66,14 @@ public class SolarSystem implements GameControlScene {
     Long startTimeMs = null;
     Game gameFrame = new Game("Solar System");
     
-    Planet mercury = new Planet(4,Color.gray,57900,88);
-    Planet venus = new Planet(12,Color.yellow,108200,224);
-    Planet earth = new Planet(12,Color.blue,149600,365);
-    Planet mars = new Planet(6,Color.red,227900,687);
-    Planet jupiter = new Planet(142,Color.lightGray,778600,4331);
-    Planet saturn = new Planet(120,Color.white,1433500,10747);
-    Planet uranus = new Planet(51,Color.green,2872500,30589);
-    Planet neptune = new Planet(49,Color.blue,4495100,59800);
+    Planet mercury = new Planet(4,Color.gray,58,88);
+	Planet venus = new Planet(12,Color.yellow,109,224);
+    Planet earth = new Planet(12,Color.blue,150,365);
+    Planet mars = new Planet(6,Color.red,228,687);
+    Planet jupiter = new Planet(142,Color.lightGray,300,4331);
+    Planet saturn = new Planet(120,Color.white,379,10747);
+    Planet uranus = new Planet(51,Color.green,457,30589);
+    Planet neptune = new Planet(49,Color.blue,523,59800);
     
     
     public SolarSystem() {
@@ -141,7 +141,7 @@ public class SolarSystem implements GameControlScene {
          * Days
          */
         g.setColor(Color.WHITE);
-        g.setFont(new Font("Times New Roman", Font.PLAIN, 32));
+        g.setFont(new Font("EB Garamond", Font.PLAIN, 32));
         g.drawString("Days: " + getDays(), 0, 50);
         
         /*
@@ -156,13 +156,13 @@ public class SolarSystem implements GameControlScene {
          * Add planets here
          */
         mercury.draw(g, numDays);
-        venus.draw(g, 224);
+        venus.draw(g, numDays);
         earth.draw(g, numDays);
-        mars.draw(g, 687);
-        jupiter.draw(g, 4331);
-        saturn.draw(g, 10747);
-        uranus.draw(g, 30589);
-        neptune.draw(g, 59800);
+        mars.draw(g, numDays);
+        jupiter.draw(g, numDays);
+        saturn.draw(g, numDays);
+        uranus.draw(g, numDays);
+        neptune.draw(g, numDays);
     }
     
     @Override

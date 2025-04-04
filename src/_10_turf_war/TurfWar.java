@@ -20,6 +20,7 @@ public class TurfWar extends PApplet {
         int leftKey;
         int downKey;
         int rightKey;
+        
 
         /*
          * The member variables below do not need to be initialized in the
@@ -30,6 +31,19 @@ public class TurfWar extends PApplet {
         boolean moveLeft = false;
         boolean moveRight = false;
         int pixelCount = 0;
+        
+        Player(int x, int y, int speed, int playerSize, int playerColor, int upKey, int leftKey, int downKey, int rightKey)
+        {
+        	this.x = x;
+        	this.y = y;
+        	this.speed = speed;
+        	this.playerSize = playerSize;
+        	this.playerColor = playerColor;
+        	this.upKey = upKey;
+        	this.leftKey = leftKey;
+        	this.downKey = downKey;
+        	this.rightKey = rightKey;
+        }
 
         void drawPlayer() {
             /*
