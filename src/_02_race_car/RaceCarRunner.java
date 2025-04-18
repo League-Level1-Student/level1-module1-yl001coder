@@ -19,23 +19,14 @@ public class RaceCarRunner {
 		// 4. If the car is damaged. Bring it in for a pit stop.
 
 		// 5. Help the car move into first place.
-
-		RaceCar car = new RaceCar("Ferrari",5);
+		RaceCar car = new RaceCar("TTTTT", 5);
 		System.out.println(car.getPositionInRace());
 		car.crash();
-		boolean damaged = car.isDamaged();
-		if(damaged == true)
-		{
-			car.pit();
-		}
-		else {
-			int et = car.getPositionInRace();
-		while(et < 1)
+		car.pit();
+		for(int i = 0; i < 7; i++)
 		{
 			car.overtake();
 		}
-		}
-		
-		
-}
+	}
+
 }

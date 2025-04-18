@@ -164,8 +164,8 @@ public class TurfWar extends PApplet {
 
         noStroke();
         
-        Player player1 = new Player(30,80,15,30,153,UP,LEFT,DOWN,RIGHT);
-        Player player2 = new Player(30,80,15,30,278,W,A,S,D);
+        player1 = new Player(30,240,25,30,Color.MAGENTA.getRGB(),UP,LEFT,DOWN,RIGHT);
+        player2 = new Player(30,120,25,30,Color.BLUE.getRGB(),W,A,S,D);
         /*
          * 8. Initialize the two Player objects. For one use UP, LEFT, DOWN,
          * RIGHT for the keys, for the second use the W,A,S,D final int 
@@ -305,5 +305,6 @@ public class TurfWar extends PApplet {
 
     static public void main(String[] args) {
         PApplet.main(TurfWar.class.getName());
+       
     }
 }
